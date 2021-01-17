@@ -1,0 +1,104 @@
+body {
+  background: #d0a2eb;
+}
+
+#vision-board {
+  margin: 50px auto;
+  width: 1200px;
+  height: 850px;
+  overflow: auto;
+  background: url("../img/2pawel-czerwinski-009elgvBM_A-unsplash.jpg");
+  background-size: cover;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.block {
+  float: left;
+  box-sizing: border-box;
+  width: 400px;
+}
+
+.small-block {
+  padding: 20px 40px;
+  height: 210px;
+}
+
+.large-block {
+  padding: 70px 40px;
+  height: 430px;
+}
+
+.center {
+  text-align: center;
+}
+
+.right {
+  text-align: right;
+}
+
+.dark-bg {
+  background: #939597;
+  color: #c2bdf3;
+}
+
+.light-bg {
+  background: #c2bdf3;
+}
+
+.highlight {
+  padding: 5px 15px;
+  background: #fff44f;
+  font-size: 18px;
+}
+
+.marker {
+  font-family: "Permanent Marker", cursive;
+  font-weight: normal;
+}
+
+.strong {
+  font-size: 38px;
+  text-transform: none;
+  line-height: 38px;
+}
+
+.title {
+  margin: 10px 0;
+  font-size: 30px;
+}
+
+.top-padding {
+  padding-top: 40px;
+}
+
+@media only screen and (max-device-width: 480px) {
+  #vision-board {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    grid-gap: 1rem;
+    height: 100%;
+    font-size: 54px;
+  }
+
+  .block {
+    min-width: 1000px;
+    height: 100%;
+  }
+
+  .right,
+  .large-block,
+  .small-block {
+    text-align: center;
+  }
+  .highlight {
+    font-size: 32px;
+  }
+
+  .title {
+    font-size: 55px;
+  }
+}
